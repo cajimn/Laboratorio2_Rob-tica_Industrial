@@ -1,4 +1,4 @@
-<h1 align="center"> Laboratorio 1 Robótica industrial </h1>
+<h1 align="center"> Laboratorio 2 Robótica industrial </h1>
 
 ## Universidad Nacional de Colombia
 -------------------------------------------------------------
