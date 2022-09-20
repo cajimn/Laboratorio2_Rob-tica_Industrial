@@ -50,5 +50,25 @@ Se realiza otras prueba con valores distintos de X, Y y theta.
 ![mat9](https://user-images.githubusercontent.com/51938754/191165817-4fb8efaf-7625-448a-8c2a-1b3981ac5d6d.png)
 
 Para finalizar el modo maestro se usa el comando `rosshutdown`.
+> ## Python 
+Para realizar el procedimiento en Python es necesario primero crear un archivo Python que ejecute o lea las teclas que se desean oprimir, en este caso como lo pide la guía se llama myTeleopKey, este se encarga de detectar las teclas que se oprimen, w,s,a y d para los desplazamientos lineales y angulares, space y r para reiniciar la posición de la tortuga o realizar giros de 180.(Ver código adjunto en carpeta scripts). Este archivo se guarda en la carpeta scripts de la carpeta hello_turtle de catkin_ws. 
+![Lab21](https://user-images.githubusercontent.com/52113892/191166139-914db828-5a7a-4d1d-b2a9-68707c41847b.png)
+
+Si se tiene configurado el catkin como lo estipula la guía, lo siguiente es modificar el archivo makeList, el cual contiene la lista de los códigos Python que se pueden ejecutar con ros, en ese se coloca el nuevo archivo creado de igual forma que están los otros archivos predeterminados. 
 
 
+![lab22](https://user-images.githubusercontent.com/52113892/191166248-a68ba035-bab4-4506-a76e-23309a25d159.png)
+Se realiza el código de build, dependiendo si se tiene instalado el tools de catkim, se ejecutará uno u otro código determinado por la guía. 
+
+El paso siguiente sería ejecutar el código cargado, para ello se hace:
+Primer terminal:
+`Roscore`
+Segundo Terminal:
+`rosrun turtlesim turtlesim_node`
+
+Tercer Terminal:
+`source devel/setup.bash`
+`rosrun hello_turtle myTeleopKey.py`
+
+`Con estos códigos debería funcionar el programa como se ve en las imagenes acontinuación a continuación.`
+![LAB23](https://user-images.githubusercontent.com/52113892/191166960-2a3d86ea-3f3c-4a2d-a2ad-f4fe1e1c1672.png)
