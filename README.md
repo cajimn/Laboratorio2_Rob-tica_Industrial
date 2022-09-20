@@ -23,7 +23,7 @@ Para saber cuales son los nodes, topics y services del programa se introducen la
 
 ![mat5](https://user-images.githubusercontent.com/51938754/191159503-aa21de05-656b-44d0-a76c-2ba889d03193.png)
 
-Primero se va a correr el programa [pruebatortuga] (scripts/pruebatortuga.m) para obervar el resultado del movimiento de la tortuga haciendo uso del topic `turtle1/cmd_vel` y su respectivo publisher para enviar información, subscriber para recibirla y por ende cambiar el estado del topic.
+Primero se va a correr el programa [pruebatortuga](scripts/pruebatortuga.m) para obervar el resultado del movimiento de la tortuga haciendo uso del topic `turtle1/cmd_vel` y su respectivo publisher para enviar información, subscriber para recibirla y por ende cambiar el estado del topic.
 
 ![mat2](https://user-images.githubusercontent.com/51938754/191160162-ba412058-6894-47cb-995d-ac61213d503c.png)
 
@@ -39,7 +39,7 @@ Se observa la creación del subscriber y se accede al ùtimo mensaje con el coma
 ![mat7](https://user-images.githubusercontent.com/51938754/191161652-140778c3-5e53-4214-9584-b28b71f4dbed.png)
 
 El tópico `turtle1/pose` solo tiene la posibilidad de suscribirse y por lo tanto no se le puede enviar información para mover la tortuga mediante un publisher. Por ende, se encuentra la opción de usar el servicio `/turtle1/teleport_absolute`, los servicios no funcionan mediante un subscriber y un publisher, estos funcionan por comunicación petición-respuesta, donde el cliente manda una petición de mensaje y espera la respuesta a través del servidor. 
-El código completo se encuentra en [prueba2] (scripts/prueba2.m) :
+El código completo se encuentra en [prueba2](scripts/prueba2.m) :
 
 ![mat3](https://user-images.githubusercontent.com/51938754/191162621-5d9412f9-5b0c-4b62-9c26-a7d61022b4e7.png)
 
