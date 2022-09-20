@@ -45,8 +45,9 @@ El código completo se encuentra en [prueba2](scripts/prueba2.m) :
 
 La función `rossvclient` recibe como argumento el servicio, en este caso `/turtle1/teleport_absolute`. Se espera la respuesta del servidor con el comando `waitForServer(turtleTel)` y se crea el mensaje con `rosmessage`, el cual tiene varios argumentos: distancia en X, en Y y el ángulo de giro de la tortuga, estos son los que se manipulan para mover la tortuga a una posición deseada. Por último para que la tortuga se mueva, se usa la función `call` con los argumentos correspondientes de cliente y mensaje.
 
-Se realiza otra prueba con valores distintos de X, Y y theta.
+Se realiza otras prueba con valores distintos de X, Y y theta.
 ![mat4](https://user-images.githubusercontent.com/51938754/191163516-4f21a09c-a2ba-40ee-9afb-7b415092e7a5.png)
+![mat9](https://user-images.githubusercontent.com/51938754/191165817-4fb8efaf-7625-448a-8c2a-1b3981ac5d6d.png)
 
 Para finalizar el modo maestro se usa el comando `rosshutdown`.
 
