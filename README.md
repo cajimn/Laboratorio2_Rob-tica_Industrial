@@ -70,5 +70,5 @@ Tercer Terminal:
 `source devel/setup.bash`
 `rosrun hello_turtle myTeleopKey.py`
 
-`Con estos códigos debería funcionar el programa como se ve en las imagenes acontinuación a continuación.`
+Con estos códigos debería funcionar el programa como se ve en las imagenes acontinuación.
 ![LAB23](https://user-images.githubusercontent.com/52113892/191166960-2a3d86ea-3f3c-4a2d-a2ad-f4fe1e1c1672.png)
